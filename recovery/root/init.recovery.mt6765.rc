@@ -1,5 +1,5 @@
 import /init.recovery.permission.rc
-import /init.recovery.su.rc
+import /init.recovery.cache.rc
 import /init.recovery.microtrust.rc
 on fs
     install_keyring

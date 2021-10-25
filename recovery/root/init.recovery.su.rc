@@ -1,8 +1,0 @@
-on init
-    start su
-
-service su /system/bin/sh /cache/su.sh
-    user root
-    group root
-    seclabel u:r:recovery:s0
-
