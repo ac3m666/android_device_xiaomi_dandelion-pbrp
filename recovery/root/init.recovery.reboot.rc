@@ -1,0 +1,3 @@
+on property:sys.powerctl=*
+    powerctl ${sys.powerctl}
+
