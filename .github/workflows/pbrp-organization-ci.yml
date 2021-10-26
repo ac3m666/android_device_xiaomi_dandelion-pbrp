@@ -10,8 +10,6 @@ on:
         description: 'Build ChangeLogs'
         required: true
         default: 'Sync Latest Source'
-  watch:
-    types: [started]
 
 env:
   BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
@@ -24,6 +22,7 @@ env:
   SFPassword: ${{ secrets.SFPassword }}
   SFUserName: ${{ secrets.SFUserName }}
   #TARGET: "define this if your target is not recoveryimage"
+  #EXTRA_CMD: "Extra Commands Here"
 
 jobs:
   PBRP_CI:
@@ -35,6 +34,7 @@ jobs:
          uses: rokibhasansagar/slimhub_actions@main
 
        - name: Auto Adapt Manifest
+         # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
          run: echo "MANIFEST=https://github.com/PitchBlackRecoveryProject/manifest_pb -b ${GITHUB_REF##*/}" >> $GITHUB_ENV
 
        - name: Export Vars
