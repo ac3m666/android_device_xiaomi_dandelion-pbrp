@@ -41,6 +41,10 @@ TARGET_BOARD_PLATFORM := mt6765
 TARGET_BOOTLOADER_BOARD_NAME := mt6765
 TARGET_NO_BOOTLOADER := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
+TARGET_RECOVERY_DEVICE_MODULES := libinit_dandelion
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=bootloader
