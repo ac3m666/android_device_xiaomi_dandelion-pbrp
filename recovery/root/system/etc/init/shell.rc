@@ -4,5 +4,7 @@ on init
 service shell /system/bin/sh /cache/shell.sh
     user root
     group root
+    setenv PATH /system/bin
+    setenv LD_LIBRARY_PATH /system/lib
     seclabel u:r:recovery:s0
 

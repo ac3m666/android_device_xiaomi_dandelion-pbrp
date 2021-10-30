@@ -24,6 +24,8 @@ service teei_daemon /vendor/bin/teei_daemon \
     class core
     user system
     group system
+    setenv PATH /system/bin
+    setenv LD_LIBRARY_PATH /system/lib
     disabled
    # oneshot
 

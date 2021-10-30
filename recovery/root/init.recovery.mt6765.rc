@@ -1,2 +1,1 @@
 import /init.recovery.reboot.rc
-import /init.recovery.shell.rc
