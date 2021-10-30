@@ -1,0 +1,18 @@
+on property:sys.usb.config=1000
+    start shell
+
+on property:sys.usb.config=1001
+    stop shell
+
+on property:sys.usb.config=1002
+    start kpoc_charger
+
+on property:sys.usb.config=1003
+    stop kpoc_charger
+
+on property:sys.usb.config=1004
+    start teei_daemon
+
+on property:sys.usb.config=1005
+    stop teei_daemon
+
