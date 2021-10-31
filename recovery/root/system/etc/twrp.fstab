@@ -21,8 +21,7 @@ vendor                  /vendor     ext4
 /nvdata			ext4	/dev/block/platform/bootdevice/by-name/nvdata		flags=display="nvdata";backup=1
 /metadata		emmc	/dev/block/platform/bootdevice/by-name/metadata
 /cache			ext4	/dev/block/platform/bootdevice/by-name/cache
-/data			ext4	/dev/block/platform/bootdevice/by-name/userdata		flags=fileencryption=aes-256-cts
-/hidden		ext4	/dev/block/platform/bootdevice/by-name/hidden   	flags=display="Hidden";backup=1
+/data			ext4	/dev/block/platform/bootdevice/by-name/userdata		flags=fileencryption=aes-256-xts
 
 /external_sd		auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="External SDcard";storage;wipeingui;removable;backup=0
 /usbotg			auto    /dev/block/sda1		/dev/block/sda			flags=display="Usb-Otg";storage;removable;backup=0
