@@ -1,0 +1,4 @@
+on init
+    symlink /system/bin/linker /sbin/linker
+    symlink /system/bin/linker64 /sbin/linker64
+

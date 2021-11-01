@@ -1,0 +1,7 @@
+on init
+    chmod 0755 /sbin/keycheck
+    chmod 0755 /sbin/ld.config.txt
+    chmod 0755 /sbin/openaes
+    chmod 0755 /sbin/linker
+    chmod 0755 /sbin/linker64
+

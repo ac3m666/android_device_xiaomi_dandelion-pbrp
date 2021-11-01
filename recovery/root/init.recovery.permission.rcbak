@@ -1,6 +1,0 @@
-on init
-    chmod 0755 /sbin/linker64
-    chmod 0755 /sbin/teei_daemon
-    chmod 0755 /sbin/android.hardware.gatekeeper@1.0-service
-    chmod 0755 /sbin/android.hardware.keymaster@4.0-service.beanpod
-    
