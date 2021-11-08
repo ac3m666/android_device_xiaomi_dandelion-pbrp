@@ -9,3 +9,4 @@ ro.treble.enabled=true
 ro.mediatek.platform=MT6765
 ro.hardware=mt6765
 ro.boot.dynamic_partitions=true
+rec.version=20211108104500
