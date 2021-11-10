@@ -5,4 +5,5 @@ service kpoc_charger /system/bin/kpoc_charger
     group root wakelock
     setenv PATH /system/bin
     setenv LD_LIBRARY_PATH /system/lib
+    seclabel u:r:recovery:s0
     capabilities BLOCK_SUSPEND SYS_ADMIN SYS_BOOT

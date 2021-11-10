@@ -5,3 +5,4 @@ service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-ser
     group root
     setenv PATH /vendor/bin
     setenv LD_LIBRARY_PATH /vendor/lib
+    seclabel u:r:recovery:s0
