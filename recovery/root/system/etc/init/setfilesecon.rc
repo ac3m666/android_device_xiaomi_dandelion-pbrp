@@ -1,0 +1,3 @@
+on init
+    chcon u:object_r:sec_ota_data_file:s0 sn_num.prop
+
