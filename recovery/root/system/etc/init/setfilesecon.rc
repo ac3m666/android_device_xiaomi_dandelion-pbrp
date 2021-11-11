@@ -1,3 +1,8 @@
 on init
-    chcon u:object_r:sec_ota_data_file:s0 sn_num.prop
+    start setfilesecon
+
+service setfilesecon /system/bin/sh /system/bin/setfilesecon.sh
+    user root
+    group root
+    seclabel u:r:recovery:s0
 
