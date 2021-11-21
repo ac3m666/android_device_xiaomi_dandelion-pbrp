@@ -7,3 +7,15 @@ QQ群
 
 QQ群号码:934981418
 
+让 github action 编译Rec
+
+设置下面几个必须变量才可以编译Rec
+
+GITHUBNAME 你的github用户名
+
+GITHUBMAIL 你的github电子邮件地址
+
+GH_BOT_TOKEN 你的github token
+
+BOT_API telegram机器人token(可以随便乱设，但不可以为空。)
+
