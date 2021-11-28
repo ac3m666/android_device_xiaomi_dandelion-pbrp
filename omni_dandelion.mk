@@ -42,8 +42,8 @@ PRODUCT_PACKAGES += \
 
 # Keymaster 3.0
 PRODUCT_PACKAGES += \ 
-	android.hardware.keymaster@3.0-impl \
-	android.hardware.keymaster@3.0-service
+	android.hardware.keymaster@3.0-service \
+	android.hardware.keymaster@3.0-impl
 
 # uncrypt
 PRODUCT_PACKAGES += \ 
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2099-12-31
+    ro.vendor.build.security_patch=2020-01-05
 	
 # Resolution
 TARGET_SCREEN_WIDTH := 720
