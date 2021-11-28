@@ -42,15 +42,6 @@ TARGET_BOARD_PLATFORM := mt6765
 TARGET_BOOTLOADER_BOARD_NAME := mt6765
 TARGET_NO_BOOTLOADER := true
 
-# Keymaster 3.0
-PRODUCT_PACKAGES += \ 
-	android.hardware.keymaster@3.0-impl \
-	android.hardware.keymaster@3.0-service
-
-# uncrypt
-PRODUCT_PACKAGES += \ 
-	uncrypt
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
 TARGET_RECOVERY_DEVICE_MODULES := libinit_dandelion

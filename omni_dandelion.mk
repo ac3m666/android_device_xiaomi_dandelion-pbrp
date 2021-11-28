@@ -35,6 +35,30 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9A
 PRODUCT_MANUFACTURER := xiaomi
 
+# Health
+PRODUCT_PACKAGES += \
+     android.hardware.health@2.1-service \
+     android.hardware.health@2.1-impl
+
+# Keymaster 3.0
+PRODUCT_PACKAGES += \ 
+	android.hardware.keymaster@3.0-impl \
+	android.hardware.keymaster@3.0-service
+
+# uncrypt
+PRODUCT_PACKAGES += \ 
+	uncrypt
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 30
+
+# fastbootd
+PRODUCT_PACKAGES += \
+     android.hardware.fastboot@1.0-impl-mock
+
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
