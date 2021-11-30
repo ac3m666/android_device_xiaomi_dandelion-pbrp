@@ -15,12 +15,12 @@ env:
   BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
   CHANGELOG: ${{ github.event.inputs.ChangeLogs }}
   BOT_API: ${{ secrets.BOT_API }}
-  GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
+  #GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
   GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
   GitHubMail: ${{ secrets.GitHubMail }}
   GitHubName: ${{ secrets.GitHubName }}
-  SFPassword: ${{ secrets.SFPassword }}
-  SFUserName: ${{ secrets.SFUserName }}
+  #SFPassword: ${{ secrets.SFPassword }}
+  #SFUserName: ${{ secrets.SFUserName }}
   #TARGET: "define this if your target is not recoveryimage"
   #EXTRA_CMD: "Extra Commands Here"
 
